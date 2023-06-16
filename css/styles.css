@@ -464,13 +464,21 @@ aside p{
   height: 404px;
   margin:0 auto;
   background-color: #FFF;
-
+  border: 1px solid #EEE;
 }
-.card-container{
+/* .card-container{
+  position: relative;
+  overflow: hidden;
+} */
+
+.card-container:hover .card-animation{
+  transform: translateY(0%);
+}
+
+.card-image{
   position: relative;
   overflow: hidden;
 }
-
 .card-body {
   padding: 20px 24px;
 }
@@ -486,16 +494,17 @@ aside p{
   transform: translateY(105%);
   transition: transform 250ms ease-in-out;
   -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
-.card-animation:hover{
+/* .card-animation:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
   transform: translateY(0);
-}
+} */
 
 .card-animation{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
-  transform: translateY(0);
+  transform: translateY(100);
 }
 
 .card-container:hover{
