@@ -85,12 +85,12 @@ nav {
   display: flex;
   width: 1em;
   height: 1em;
-  fill: #AFB1B8;
+  /* fill: #AFB1B8; */
 } 
 
-.contact-us li:hover{
+/* .contact-us li:hover{
   fill:#188ce8;
-}
+} */
 .icon-value{
   background-color: var(--background-gray-color);
   display: flex;
@@ -303,7 +303,7 @@ a{
   fill:var(--primary-text-color);
 }
 
-.members-section .container .team-cards li ul li a:hover{
+.members-section .container .team-cards .wrkr ul li a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,7 +313,6 @@ a{
   border-radius: 35px;
   fill:var(--primary-white-color);
 }
-
 
 .main-title {
   color: white;
