@@ -133,6 +133,45 @@ nav {
   color: var(--primary-white-color);
 }
 
+.backdrop.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop{
+  position: fixed;
+  width: 1600px;
+  height: 1024px;
+  background-color: rgba(0, 0, 0, 0.2);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+ .frame1{
+  position: fixed;
+  top: 221px;
+  left: 536;
+  width: 528px;
+  height: 581px;
+  background-color: var(--primary-white-color);
+} 
+
+.close-button{
+  background-color: var(--primary-white-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  stroke: rgba(0, 0, 0, 0.9);
+  font-size: 11px;
+}
+
 .logo {
   color: var(--accent-color);
   font-weight: 700;

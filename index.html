@@ -50,7 +50,24 @@
     <!-- Solicitud de Servicio-->
     <section class="top-box">
       <h1 class="main-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-      <button class="button-link" type="button">solicite nuestro servicio</button>
+      <button data-modal-open class="button-link" type="button">solicite nuestro servicio</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+              <svg class="icon">
+                <use href="./images/SVG/sprite.svg#icon-x-vector"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="frame1 is-hidden" data-modal>
+            <!-- <div class="modal">
+              <button type="button" class="close-button" data-modal-close>
+                <svg class="icon">
+                  <use href="./images/SVG/sprite.svg#icon-x-vector"></use>
+                </svg>
+              </button>
+            </div> -->
+      </div>
     </section>
     <!-- Promesa de valor -->
     <section class="section">
@@ -362,6 +379,7 @@
       </aside>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
